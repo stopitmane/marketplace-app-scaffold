@@ -1,6 +1,6 @@
 # Marketplace App (mobile client)
 
-React Native + TypeScript client for `marketplace-backend`. Same MVVM/Clean-ish layering as the finance app (Project #1) - build every new feature by copying the `Listings` or `Cart` slice's shape, not inventing a new one.
+React Native + TypeScript client for `marketplace-backend`. build every new feature by copying the `Listings` or `Cart` slice's shape, not inventing a new one.
 
 ## Architecture
 
