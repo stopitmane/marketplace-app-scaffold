@@ -33,6 +33,6 @@ export function errorHandler(err: unknown, req: Request, res: Response, _next: N
  *  instead of crashing the process (Express 4 doesn't do this for you). */
 export function asyncHandler(fn: (req: Request, res: Response, next: NextFunction) => Promise<unknown>) {
   return (req: Request, res: Response, next: NextFunction) => {
-    Promise.resolve(fn(req, res, next)).catch(next);
+    void Promise.resolve(fn(req, res, next)).catch(next);
   };
 }
